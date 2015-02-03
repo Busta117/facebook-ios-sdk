@@ -22,7 +22,18 @@ Pod::Spec.new do |s|
                      :tag => "sdk-version-3.13.2"
                     }
 
-  s.source_files  =  "src/**/*.{h,m}"
+  s.source_files  =  "src/*.{h,m}",
+    "src/Base64/*.{h,m}",
+    "src/Cryptography/*.{h,m}",
+    "src/Ads/*.{h,m}",
+    "src/Core/*.{h,m}",
+    "src/DeviceAPI/*.{h,m}",
+    "src/Legacy/*.{h,m}",
+    "src/Login/*.{h,m}",
+    "src/Network/*.{h,m}",
+    "src/UI/*.{h,m}",
+    "src/Insights/*.{h,m}"
+  
   s.exclude_files = "src/**/*Tests.{h,m}", "src/tests/*.{h,m}", "src/*Test*/*.{h,m}"
 
   s.public_header_files = "src/*.h"
