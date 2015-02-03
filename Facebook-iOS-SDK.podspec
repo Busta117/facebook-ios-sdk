@@ -36,13 +36,11 @@ Pod::Spec.new do |s|
   
   s.exclude_files = "src/**/*Tests.{h,m}", "src/tests/*.{h,m}", "src/*Test*/*.{h,m}"
 
-  s.public_header_files = "src/*.h"
-
   s.header_dir = "FacebookSDK"
 
   s.resources = "src/FBUserSettingsViewResources.bundle"
 
-  s.weak_frameworks = "Accounts", "CoreLocation", "Social", "Security", "QuartzCore", "CoreGraphics", "UIKit", "Foundation", "AudioToolbox"
+  s.weak_frameworks = "Accounts", "CoreLocation", "Social", "Security"
 
   s.requires_arc = false
 
